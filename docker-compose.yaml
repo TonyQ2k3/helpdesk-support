@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  motion-frontend:
+    container_name: motion-frontend-container
+    image: motion-frontend-img
+    build: ./motion-frontend
+    ports:
+      - "3000:3000"
+
+  motion-backend:
+    container_name: motion-backend-container
+    image: motion-backend-img
+    build: ./motion-backend
+    ports:
+      - "8080:8080"
+
+  motion-db:
+    container_name: motion-db-container
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+
+  
