@@ -10,7 +10,7 @@ export default function NavBar() {
                 width={70}
                 quality={100}
             />
-            <Link href="/"><h1>Motion Assist</h1></Link>
+            <Link href="/"><h1>Motion Support</h1></Link>
             <div>
                 <Link href="/news">News</Link>
             </div>
